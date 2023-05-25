@@ -1,0 +1,6 @@
+img {
+    padding-top: 50px;
+    object-fit: cover;
+    max-height: 500px;
+    width: 100%;
+}

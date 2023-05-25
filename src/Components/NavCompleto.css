@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  font-family: "Righteous", monospace;
+}
+
+.logo {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+
+.navCom {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  }
+
+  .fluidcontent {
+    height: 80px;
+    width: 100%;
+  }
+ 
+  @media screen and (max-width: 1000px) {
+    .navCom {
+   
+      object-fit: cover;
+    }
+    .fluidcontent {
+      height: 120px;
+      width: 100%;
+    }
+    .logo {
+      margin-left: 10px;
+    }
+    
+  }

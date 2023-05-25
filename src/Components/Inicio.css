@@ -1,0 +1,22 @@
+
+nav{
+    background-color: black;
+    height: 35px;
+}
+ul {
+    
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+li{
+    text-decoration-line: none;
+}
+
+nav h2 {
+    color: rgba(240, 248, 255, 0.501);
+    font-size: 20px;
+    text-decoration: none;
+    font-size-adjust: none;
+  }

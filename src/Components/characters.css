@@ -1,0 +1,105 @@
+.contenedorCharacter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 2px 2px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: rgb(2, 1, 29);
+  background-image: linear-gradient(#010e04, #1d4019, #7cb48f, #010e03);
+  background-size: 500%;
+  animation: animado 10s infinite;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.contenedorCharacter a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #ffffff;
+  z-index: 3;
+  text-shadow: 2px 2px 2px black;
+}
+
+.card-body {
+  object-fit: contain;
+  justify-content: center;
+  width: 20rem;
+  height: 61rem;
+  margin-left: 10px;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.842);
+  margin-bottom: 30px;
+  margin-left: 80px;
+}
+
+.card:hover {
+  box-shadow: 8px 8px 8px rgba(255, 254, 254, 0.474);
+}
+
+.card-body {
+  align-items: center;
+  object-fit: contain;
+  height: 500px;
+  width: 22rem;
+  transition: all 300ms;
+  border-radius: 18px 18px 18px 0px;
+  border-style: ridge;
+
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  transition-duration: 5s;
+  box-shadow: 8px 8px 8px rgba(255, 254, 254, 0.673);
+}
+
+.card-img {
+  object-fit: contain;
+  width: 20rem;
+  height: 61rem;
+  background: rgb(4, 23, 4);
+  position: relative;
+  transition: all 350ms;
+}
+
+h5 {
+  color: #241f1f;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #4a4646;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .contenedorCharacter {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  a {
+    font-size: medium;
+  }
+
+  .contenedor a {
+    margin-left: 45px;
+  }
+
+  .card-img {
+    object-fit: contain;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  .card-body {
+    height: 800px;
+    width: 35rem;
+    object-fit: cover;
+  }
+}
